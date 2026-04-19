@@ -1,18 +1,16 @@
 # CUBE Copilot Prototype
 
 CUBE Copilot是一個面向金融客戶的GenAI財務健康管家。
-
 CUBE Copilot的設計目標是把原本分散的帳務資訊、商品知識與 FAQ，轉成客戶看得懂、願意採取行動的對話式建議，並在高風險場景下保留適配性檢核與真人轉接。
 
-## 1. 為什麼選這個場景
+## 1. 選題理由
 
 金融客戶最常見的問題不是「找不到功能」，而是：
-- 看得到帳務，但不知道下一步要做什麼。
+- 看得到資訊，但不知道下一步要做什麼。
 - 想存錢、理財或補保障，卻不清楚先後順序。
 - 面對金融商品說明時，理解成本高，容易延後決策。
 
-因此，我把場景定義成：
-> 以GenAI幫客戶做「財務健康分析+下一步建議+商品教育+真人轉接」。
+因此，我把場景定義成以GenAI幫客戶做「財務健康分析+下一步建議+商品教育+真人轉接」。
 
 ## 2. Prototype 功能
 
@@ -29,7 +27,7 @@ CUBE Copilot的設計目標是把原本分散的帳務資訊、商品知識與 F
 
 - **前端**：Streamlit
 - **流程編排**：LangGraph
-- **LLM**：OpenAI API（透過`langchain-openai`接入）
+- **LLM**：Gemini API（透過`langchain-google-genai`接入）
 - **檢索**：TF-IDF Retriever
 - **資料**：本地JSON合成資料
 
@@ -64,7 +62,7 @@ load_profile
 streamlit run app.py
 ```
 
-```
+
 
 ### Demo 1：支出分析與存錢
 
