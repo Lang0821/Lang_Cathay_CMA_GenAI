@@ -228,3 +228,5 @@ def get_retriever() -> TfidfRetriever:
 
 def search_documents(query: str, top_k: int = 4) -> List[Dict[str, Any]]:
     return get_retriever().search(query=query, top_k=top_k)
+def build_retriever():
+    return get_retriever()

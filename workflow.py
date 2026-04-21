@@ -321,7 +321,7 @@ def _heuristic_response(state: FinanceState) -> str:
         + "\n\n### 為何這樣建議\n"
         + "\n".join(f"- {item}" for item in reasons)
         + "\n\n### 風險提醒\n"
-        + "- 本建議為 AI 助理示意。\n"
+        + "- 本回覆為 AI 助理示意，未使用真實銀行資料與正式 KYC 流程。\n"
         + "- 若涉及投資、保險或正式申辦，仍需經過適配性與人工覆核。\n\n"
         + "### 來源\n"
         + "- "
